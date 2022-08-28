@@ -38,6 +38,7 @@ urlpatterns = [
     path('cattle/', include('cattle.urls')),
     path('income/', include('income_farm.urls')),
     path('farm/', include('farm.urls')),
+    path('ration_farm/', include('ration_farm.urls')),
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
